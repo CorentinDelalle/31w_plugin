@@ -1,9 +1,19 @@
 .carrousel {
-    border:2px solid #124DB0;
-    background-color:#124DB0;
-    color : white;
-    width : 200px;
-    height :200px;
-    text-align: center;
-    margin: auto;
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    left: 25vw;
+    top: 25vh;
+    background-color: bisque;
+    transform: scale(0);
+    transition: transform 1s;
 } 
+
+.carrousel--ouvrir{
+    transform: scale(1);
+}
+
+.btn_fermer {
+    display: flex;
+    
+}

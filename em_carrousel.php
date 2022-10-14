@@ -5,7 +5,7 @@
 */
 
 /**
- * plugin Name:EM_carrousel
+ * plugin Name:Coco_carrousel
  * Version:1.0.0
  */
 
@@ -29,13 +29,21 @@ function cococ_enqueue(){
                             plugin_dir_url(__FILE__). "js/carrousel.js",
                             array(),
                             $version_js,
-                            false);                       
+                            true);                       
 }
 
 add_action("wp_enqueue_scripts","cococ_enqueue");
 
  function genere_boite(){
-    $contenu = "<div class='carrousel' >carrousel</div>";
+    $contenu = "
+               <button class=\"btn_modal\">boite modal</button>
+
+               <div class='carrousel' >carrousel
+               <button class=\"btn_fermer\">X</button>
+               </div>
+
+               ";
+               
     return $contenu;
  };
  add_shortcode('coco_carrousel','genere_boite'); 
