@@ -16,27 +16,27 @@
 // wp_enqueue_script() // intègre le script dans la page
 // wp_enqueue_scripts // le hook
 
-function rlc_enqueue(){
+function cococ_enqueue(){
     $version_css = filemtime(plugin_dir_path(__FILE__)."style.css");
     $version_js = filemtime(plugin_dir_path(__FILE__)."js/carrousel.js");
 
-    wp_enqueue_style("rlc_style_carrousel",
+    wp_enqueue_style("cococ_style_carrousel",
                             plugin_dir_url(__FILE__). "style.css",
                             array(),
                             $version_css,
                             false);
-    wp_enqueue_script("rlc_js_carrousel",
+    wp_enqueue_script("cococ_js_carrousel",
                             plugin_dir_url(__FILE__). "js/carrousel.js",
                             array(),
                             $version_js,
                             false);                       
 }
 
-add_action("wp_enqueue_scripts","rlc_enqueue");
+add_action("wp_enqueue_scripts","cococ_enqueue");
 
  function genere_boite(){
-    $contenu = "<div class='carrousel' >carrusel</div>";
+    $contenu = "<div class='carrousel' >carrousel</div>";
     return $contenu;
  };
- add_shortcode('rl_carrousel','genere_boite'); // para que el plugin funcione, el cual esta en la funcion genere_boite
+ add_shortcode('coco_carrousel','genere_boite'); 
 
