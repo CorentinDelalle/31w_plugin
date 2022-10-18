@@ -1,9 +1,9 @@
 .carrousel {
     position: absolute;
-    width: 50vw;
-    height: 50vh;
-    left: 25vw;
-    top: 25vh;
+    width: 75vw;
+    height: 75vh;
+    left: 12.5vw;
+    top: 12.5vh;
     background-color: bisque;
     transform: scale(0);
     transition: transform 1s;
@@ -11,9 +11,11 @@
 
 .carrousel--ouvrir{
     transform: scale(1);
+    opacity: 1;
 }
 
 .btn_fermer {
     display: flex;
+    align-items: center;
     
 }
