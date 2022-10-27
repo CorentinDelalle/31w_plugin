@@ -1,7 +1,6 @@
 (function(){
     console.log("carrousel");
     let index = 0;
-    const emlBtnModal = document.querySelector('.btn_modal');
     const elmCarrousel = document.querySelector('.carrousel');
     const elmBtnModalFermer = document.querySelector('.btn_fermer')
     const elCarrousel__figure = document.querySelector('.carrousel__figure');
@@ -106,11 +105,6 @@
 
             })
     }
-
-    emlBtnModal.addEventListener('mousedown', function(){
-
-        elmCarrousel.classList.add('carrousel--ouvrir');
-    });
 
     elmBtnModalFermer.addEventListener('mousedown', function(){
         elmCarrousel.classList.remove('carrousel--ouvrir');

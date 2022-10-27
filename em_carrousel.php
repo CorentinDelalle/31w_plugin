@@ -36,8 +36,6 @@ add_action("wp_enqueue_scripts","cococ_enqueue");
 
  function genere_boite(){
     $contenu = "
-               <button class='btn_modal'>boite modal</button>
-
                <div class='carrousel'>
                <figure class='carrousel__figure'></figure>
                <form class='carrousel__form'></form>
